@@ -1,0 +1,58 @@
+package com.studentsmedia.model;
+
+import java.sql.Date;
+
+public class Beneficio {
+	int beneficioId;
+	String entidad;
+	String descripcion;
+	Date fechafin;
+	String imagen;
+	public Beneficio(int beneficioId, String entidad, String descripcion, Date fechafin, String imagen) {
+		super();
+		this.beneficioId = beneficioId;
+		this.entidad = entidad;
+		this.descripcion = descripcion;
+		this.fechafin = fechafin;
+		this.imagen = imagen;
+	}
+	public Beneficio() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Beneficio [beneficioId=" + beneficioId + ", entidad=" + entidad + ", descripcion=" + descripcion
+				+ ", fechafin=" + fechafin + ", imagen=" + imagen + "]";
+	}
+	public int getbeneficioId() {
+		return beneficioId;
+	}
+	public void setbeneficioId(int beneficioId) {
+		this.beneficioId = beneficioId;
+	}
+	public String getEntidad() {
+		return entidad;
+	}
+	public void setEntidad(String entidad) {
+		this.entidad = entidad;
+	}
+	public String getDescripcion() {
+		return descripcion;
+	}
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+	public Date getFechafin() {
+		return fechafin;
+	}
+	public void setFechafin(Date fechafin) {
+		this.fechafin = fechafin;
+	}
+	public String getImagen() {
+		return imagen;
+	}
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+}
