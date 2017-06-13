@@ -32,7 +32,7 @@
 			<div class="rd-navbar-wrap">
 				<nav data-md-device-layout="rd-navbar-fixed"
 					data-lg-device-layout="rd-navbar-static"
-					class="rd-navbar rd-navbar-default rd-navbar-dark"
+					class="rd-navbar rd-navbar-default rd-navbar-light"
 					data-lg-auto-height="true" data-md-layout="rd-navbar-fixed"
 					data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
 					<div class="rd-navbar-inner">
@@ -70,9 +70,9 @@
 										<li class="active"><a href="#"><span>Noticias</span></a>
 										</li>
 										<li><a href="/studentsmedia/beneficios"><span>Beneficios</span></a>
-                      					</li>
-                      					<li><a href="/studentsmedia/eventos"><span>Eventos</span></a>
-                      					</li>
+										</li>
+										<li><a href="/studentsmedia/eventos"><span>Eventos</span></a>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -81,10 +81,32 @@
 				</nav>
 			</div>
 		</header>
+		<section class="breadcrumb-classic">
+			<div class="shell section-34 section-sm-50">
+				<div class="range range-lg-middle">
+					<div class="cell-lg-2 veil reveal-sm-block cell-lg-push-2">
+						<span class="mdi mdi-newspaper icon icon-white"></span>
+					</div>
+					<div
+						class="cell-lg-5 veil reveal-lg-block cell-lg-push-1 text-lg-left">
+						<h2>
+							<span class="big">Noticias</span>
+						</h2>
+					</div>
+					<div
+						class="offset-top-0 offset-sm-top-10 cell-lg-5 offset-lg-top-0 small cell-lg-push-3 text-lg-right">
+						<ul class="list-inline list-inline-dashed p">
+							<li><a href="/studentsmedia/index">Inicio</a></li>
+							<li>Noticias</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 		<main class="page-content section-41 section-sm-66">
 		<div class="shell">
 			<div class="range range-xs-center">
-				<div class="cell-md-8">
+				<div class="cell-md-10">
 					<section>
 						<c:forEach var="noticia" items="${noticias}">
 							<div class="offset-top-30 offset-sm-top-30">
@@ -93,8 +115,7 @@
 									<!-- Post media-->
 									<header class="post-media">
 										<div data-photo-swipe="gallery">
-											<a class="thumbnail-classic"
-												href="events-list-single-left-sidebar.html" target="_self">
+											<a class="thumbnail-classic" href="#" target="_self">
 												<figure>
 													<img width="570" height="321"
 														src="<c:url value="/resources/images/noticias/${noticia.imagen}" />"
@@ -107,7 +128,7 @@
 									<section class="post-content text-left offset-top-41">
 										<!-- Post Title-->
 										<h3 class="offset-top-10">
-											<a href="events-list-single-left-sidebar.html">${noticia.titulo}</a>
+											<a href="#">${noticia.titulo}</a>
 										</h3>
 										<!-- Post Body-->
 										<div class="post-body">
@@ -115,7 +136,7 @@
 												<p>${noticia.desc1}</p>
 											</div>
 										</div>
-										<a href="events-list-single-left-sidebar.html"
+										<a href="#"
 											class="btn btn-anis-effect btn-sm btn-primary offset-top-30">Read
 											More</a>
 										<!-- Post meta-->
@@ -123,6 +144,11 @@
 											<time datetime="${noticia.fecha}">
 												<span class="post-meta-day">${noticia.day}</span><span
 													class="big text-uppercase post-meta-month">${noticia.month}</span>
+												<c:if test="${noticia.estado=='Nuevo'}">
+													<br>
+													<span
+														class="big text-uppercase label-custom label-lg-custom label-ellipsis-custom label-success">${noticia.estado}</span>
+												</c:if>
 											</time>
 										</div>
 									</section>

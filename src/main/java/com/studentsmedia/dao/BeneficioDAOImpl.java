@@ -25,7 +25,7 @@ public class BeneficioDAOImpl implements BeneficioDAO{
 	@Override
 	public List<Beneficio> findAll() throws DAOException, EmptyResultException {
 		String query = "SELECT id, entidad, descripcion, fechafin, imagen"
-				+ " FROM beneficios ";
+				+ " FROM beneficios ORDER BY fechafin desc";
 		try {
 
 			List<Beneficio> beneficios= jdbcTemplate.query(query, new BeneficioMapper());

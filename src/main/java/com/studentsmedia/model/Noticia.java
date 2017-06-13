@@ -1,6 +1,6 @@
 package com.studentsmedia.model;
 
-import java.sql.Date;
+import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -11,6 +11,16 @@ public class Noticia {
 	String desc2;
 	Date fecha;
 	String imagen;
+	String estado;
+	public String getEstado(){
+		Date today = Calendar.getInstance().getTime();
+		Calendar pasado = Calendar.getInstance();
+		pasado.add(Calendar.DATE, -7);
+		if(fecha.after(pasado.getTime()) && fecha.before(today)) {
+		    estado = "Nuevo";
+		}
+		return estado;
+	}
 	public Noticia() {
 		super();
 		// TODO Auto-generated constructor stub

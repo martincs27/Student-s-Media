@@ -122,7 +122,7 @@
 													<a href="/studentsmedia/noticias"
 														data-caption-animate="fadeInUp" data-caption-delay="1200"
 														class="btn btn-block btn-danger btn-lg btn-aqil-effect btn-aqil-effect-mod-2"><span
-														class="btn-text">Noticias</span></a>
+														class="btn-text" style="font-size: xx-large">Noticias</span></a>
 
 												</div>
 												<div
@@ -130,14 +130,14 @@
 													<a href="/studentsmedia/beneficios"
 														data-caption-animate="fadeInUp" data-caption-delay="1200"
 														class="btn btn-block btn-success btn-lg btn-aqil-effect btn-aqil-effect-mod-2"><span
-														class="btn-text">Beneficios</span></a>
+														class="btn-text" style="font-size: xx-large">Beneficios</span></a>
 												</div>
 												<div
 													class="cell-lg-4 cell-md-4 cell-sm-4 offset-top-50 offset-xs-top-50">
 													<a href="/studentsmedia/eventos"
 														data-caption-animate="fadeInUp" data-caption-delay="1200"
 														class="btn btn-block btn-warning btn-lg btn-aqil-effect btn-aqil-effect-mod-2"><span
-														class="btn-text">Eventos</span></a>
+														class="btn-text" style="font-size: xx-large">Evento</span></a>
 												</div>
 											</div>
 										</div>

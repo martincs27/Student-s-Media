@@ -32,7 +32,7 @@
 			<div class="rd-navbar-wrap">
 				<nav data-md-device-layout="rd-navbar-fixed"
 					data-lg-device-layout="rd-navbar-static"
-					class="rd-navbar rd-navbar-default rd-navbar-dark"
+					class="rd-navbar rd-navbar-default rd-navbar-light"
 					data-lg-auto-height="true" data-md-layout="rd-navbar-fixed"
 					data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
 					<div class="rd-navbar-inner">
@@ -71,8 +71,7 @@
 										</li>
 										<li><a href="/studentsmedia/beneficios"><span>Beneficios</span></a>
 										</li>
-										<li class="active"><a href="#"><span>Eventos</span></a>
-										</li>
+										<li class="active"><a href="#"><span>Eventos</span></a></li>
 									</ul>
 								</div>
 							</div>
@@ -81,6 +80,28 @@
 				</nav>
 			</div>
 		</header>
+		<section class="breadcrumb-classic">
+			<div class="shell section-34 section-sm-50">
+				<div class="range range-lg-middle">
+					<div class="cell-lg-2 veil reveal-sm-block cell-lg-push-2">
+						<span class="mdi mdi-calendar icon icon-white"></span>
+					</div>
+					<div
+						class="cell-lg-5 veil reveal-lg-block cell-lg-push-1 text-lg-left">
+						<h2>
+							<span class="big">Eventos</span>
+						</h2>
+					</div>
+					<div
+						class="offset-top-0 offset-sm-top-10 cell-lg-5 offset-lg-top-0 small cell-lg-push-3 text-lg-right">
+						<ul class="list-inline list-inline-dashed p">
+							<li><a href="/studentsmedia/index">Inicio</a></li>
+							<li>Eventos</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 		<main class="page-content section-34 section-sm-34">
 		<div class="shell">
 			<div class="range range-xs-center">
@@ -116,21 +137,24 @@
 														href="<c:url value="/resources/images/eventos/${evento.imagen1}" />">
 														<figure>
 															<img width="570" height="321"
-																src="<c:url value="/resources/images/eventos/${evento.imagen1}" />" alt="">
+																src="<c:url value="/resources/images/eventos/${evento.imagen1}" />"
+																alt="">
 														</figure>
 													</a><a class="thumbnail-classic" data-photo-swipe-item=""
 														data-size="1170x600"
 														href="<c:url value="/resources/images/eventos/${evento.imagen2}" />">
 														<figure>
 															<img width="570" height="321"
-																src="<c:url value="/resources/images/eventos/${evento.imagen2}" />" alt="">
+																src="<c:url value="/resources/images/eventos/${evento.imagen2}" />"
+																alt="">
 														</figure>
 													</a><a class="thumbnail-classic" data-photo-swipe-item=""
 														data-size="1170x600"
 														href="<c:url value="/resources/images/eventos/${evento.imagen3}" />">
 														<figure>
 															<img width="570" height="321"
-																src="<c:url value="/resources/images/eventos/${evento.imagen3}" />" alt="">
+																src="<c:url value="/resources/images/eventos/${evento.imagen3}" />"
+																alt="">
 														</figure>
 													</a>
 												</div>

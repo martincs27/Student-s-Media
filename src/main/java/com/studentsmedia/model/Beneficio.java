@@ -1,6 +1,7 @@
 package com.studentsmedia.model;
 
-import java.sql.Date;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 public class Beneficio {
 	int beneficioId;
@@ -8,6 +9,16 @@ public class Beneficio {
 	String descripcion;
 	Date fechafin;
 	String imagen;
+	String estado;
+	public String getEstado(){
+		Date today = new Date();
+		if(today.after(fechafin)){
+			estado="Vencido";
+		}else{
+			estado="Vigente";
+		}
+		return estado;
+	}
 	public Beneficio(int beneficioId, String entidad, String descripcion, Date fechafin, String imagen) {
 		super();
 		this.beneficioId = beneficioId;
@@ -43,8 +54,9 @@ public class Beneficio {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public Date getFechafin() {
-		return fechafin;
+	public String getFechafin() {
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+		return sdf.format(fechafin);
 	}
 	public void setFechafin(Date fechafin) {
 		this.fechafin = fechafin;

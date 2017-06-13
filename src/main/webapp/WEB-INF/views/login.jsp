@@ -44,7 +44,7 @@
                                   <p class="text-extra-small text-dark offset-top-10">Ingresa tus credenciales abajo</p>
                                 </div>
                       <!-- RD Mailform-->
-                      <form:form data-form-output="form-output-global" data-form-type="contact" method="post" class="text-left offset-top-50" action="login">
+                      <form:form data-form-output="form-output-global" data-form-type="contact" method="post" class="text-left offset-top-50" action="/">
                         <div class="form-group">
                           <div class="input-group input-group-sm"><span class="input-group-addon input-group-addon-inverse"><span class="input-group-icon mdi mdi-account-outline"></span></span>
                             <form:input path="username" id="login-your-login" placeholder="Usuario" type="text" name="login" data-constraints="@Required" class="form-control"/>

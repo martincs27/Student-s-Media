@@ -61,11 +61,11 @@ public class LoginController {
 		} catch (LoginException e) {
 			// TODO Auto-generated catch block
 			model.addAttribute("message", "Usuario y/o clave incorrectos");
-			modelAndView = new ModelAndView("login", "command", new Usuario());
+			modelAndView = new ModelAndView("redirect:/", "command", new Usuario());
 		} catch (DAOException e) {
 			// TODO Auto-generated catch block
 			model.addAttribute("message", e.getMessage());
-			modelAndView = new ModelAndView("login", "command", new Usuario());
+			modelAndView = new ModelAndView("redirect:/", "command", new Usuario());
 		}
 
 		return modelAndView;

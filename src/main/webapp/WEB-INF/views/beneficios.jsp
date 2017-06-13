@@ -32,7 +32,7 @@
 			<div class="rd-navbar-wrap">
 				<nav data-md-device-layout="rd-navbar-fixed"
 					data-lg-device-layout="rd-navbar-static"
-					class="rd-navbar rd-navbar-default rd-navbar-dark"
+					class="rd-navbar rd-navbar-default rd-navbar-light"
 					data-lg-auto-height="true" data-md-layout="rd-navbar-fixed"
 					data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
 					<div class="rd-navbar-inner">
@@ -72,7 +72,7 @@
 										<li class="active"><a href="#"><span>Beneficios</span></a>
 										</li>
 										<li><a href="/studentsmedia/eventos"><span>Eventos</span></a>
-                      					</li>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -81,6 +81,28 @@
 				</nav>
 			</div>
 		</header>
+		<section class="breadcrumb-classic">
+			<div class="shell section-34 section-sm-50">
+				<div class="range range-lg-middle">
+					<div class="cell-lg-2 veil reveal-sm-block cell-lg-push-2">
+						<span class="mdi mdi-tag-multiple icon icon-white"></span>
+					</div>
+					<div
+						class="cell-lg-5 veil reveal-lg-block cell-lg-push-1 text-lg-left">
+						<h2>
+							<span class="big">Beneficios</span>
+						</h2>
+					</div>
+					<div
+						class="offset-top-0 offset-sm-top-10 cell-lg-5 offset-lg-top-0 small cell-lg-push-3 text-lg-right">
+						<ul class="list-inline list-inline-dashed p">
+							<li><a href="/studentsmedia/index">Inicio</a></li>
+							<li>Beneficios</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 		<main class="page-content">
 		<section class="section-20 section-sm-20">
 			<div class="shell">
@@ -93,26 +115,33 @@
 									class="isotope">
 									<c:forEach var="beneficio" items="${beneficios}">
 										<div data-photo-swipe-gallery="gallery" class="row">
-										<div data-filter="Gallery 2"
-											class="col-xs-12 col-sm-6 isotope-item">
-											<!-- Thumbnail Janes-->
-											<figure class="thumbnail-janes">
-												<div>
-													<a data-photo-swipe-item="" data-size="1170x600"
-														href="images/portfolio/portfolio-02-1170x600.jpg"><img
-														width="570" height="420"
-														src="<c:url value="/resources/images/beneficios/${beneficio.imagen}" />" alt=""></a>
-												</div>
-												<figcaption>
+											<div data-filter="Gallery 2"
+												class="col-xs-12 col-sm-4 isotope-item">
+												<!-- Thumbnail Janes-->
+												<figure class="thumbnail-janes">
 													<div>
-														<h4 class="thumbnail-janes-title">${beneficio.entidad}</h4>
+														<a data-photo-swipe-item="" data-size="1170x600"
+															href="images/portfolio/portfolio-02-1170x600.jpg"><img
+															width="570" height="420"
+															src="<c:url value="/resources/images/beneficios/${beneficio.imagen}" />"
+															alt=""> </a>
 													</div>
-													<p>${beneficio.descripcion}</p>
-													<p>Fecha Fin ${beneficio.fechafin}</p>
-												</figcaption>
-											</figure>
+													<figcaption>
+														<div>
+															<h4 class="thumbnail-janes-title">${beneficio.entidad}</h4>
+														</div>
+														<p>${beneficio.descripcion}</p>
+														<p>Vence: ${beneficio.fechafin}</p>
+														<c:if test="${beneficio.estado=='Vencido'}">
+														<span class="label-custom label-lg-custom label-danger">${beneficio.estado}</span>
+														</c:if>
+														<c:if test="${beneficio.estado=='Vigente'}">
+														<span class="label-custom label-lg-custom label-primary">${beneficio.estado}</span>
+														</c:if>
+													</figcaption>
+												</figure>
+											</div>
 										</div>
-									</div>									
 									</c:forEach>
 								</div>
 							</div>
