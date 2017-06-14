@@ -5,7 +5,7 @@
 <html lang="en" class="wide wow-animation smoothscroll scrollTo">
 <head>
 <!-- Site Title-->
-<title>Student's Media - Noticias</title>
+<title>Student's Media</title>
 <meta charset="utf-8">
 <meta name="format-detection" content="telephone=no">
 <meta name="viewport"
@@ -34,7 +34,8 @@
 				<img class='img-responsive'
 					style='margin-top: -20px; margin-left: -18px;' width='330'
 					height='67'
-					src='/studentsmedia/resources/images/studentsmedia/logo.png' alt='' />
+					src='/studentsmedia/resources/images/studentsmedia/logo2.png'
+					alt='' />
 				<div class="offset-top-41 text-center">
 					<div class="spinner"></div>
 				</div>
@@ -60,9 +61,8 @@
 							<!--Navbar Brand-->
 							<div class="rd-navbar-brand">
 								<a href="#"><img
-									style='margin-top: -5px; margin-left: -15px;' width='138'
-									height='31'
-									src='/studentsmedia/resources/images/studentsmedia/logo.png'
+									style='margin-top: -5px; margin-left: -15px;' height='31'
+									src='/studentsmedia/resources/images/studentsmedia/logo2.png'
 									alt='' /></a>
 							</div>
 						</div>
@@ -72,9 +72,8 @@
 									<!--Navbar Brand Mobile-->
 									<div class="rd-navbar-mobile-brand">
 										<a href="#"><img
-											style='margin-top: -5px; margin-left: -15px;' width='138'
-											height='31'
-											src='/studentsmedia/resources/images/studentsmedia/logo.png'
+											style='margin-top: -5px; margin-left: -15px;' height='31'
+											src='/studentsmedia/resources/images/studentsmedia/logo2.png'
 											alt='' /></a>
 									</div>
 									<div class="form-search-wrap"></div>

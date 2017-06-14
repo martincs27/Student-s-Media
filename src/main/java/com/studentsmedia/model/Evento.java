@@ -1,6 +1,8 @@
 package com.studentsmedia.model;
 
-import java.sql.Date;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 public class Evento {
 	int eventoId;
@@ -48,7 +50,10 @@ public class Evento {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public Date getFecha() {
+	public String getFecha() {
+		SimpleDateFormat formato = 
+			    new SimpleDateFormat("EEEEEEEEE  d 'de' MMMM 'de' yyyy", new Locale("es", "ES"));
+			String fecha = formato.format(new Date());
 		return fecha;
 	}
 	public void setFecha(Date fecha) {

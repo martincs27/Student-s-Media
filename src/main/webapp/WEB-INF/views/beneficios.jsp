@@ -5,7 +5,7 @@
 <html lang="en" class="wide wow-animation smoothscroll scrollTo">
 <head>
 <!-- Site Title-->
-<title>Student's Media - Noticias</title>
+<title>Student's Media - Beneficios</title>
 <meta charset="utf-8">
 <meta name="format-detection" content="telephone=no">
 <meta name="viewport"
@@ -28,6 +28,18 @@
 </head>
 <body>
 	<div class="page text-center">
+		<div class="page-loader page-loader-variant-1">
+			<div>
+				<img class='img-responsive'
+					style='margin-top: -20px; margin-left: -18px;' width='330'
+					height='67'
+					src='/studentsmedia/resources/images/studentsmedia/logo2.png'
+					alt='' />
+				<div class="offset-top-41 text-center">
+					<div class="spinner"></div>
+				</div>
+			</div>
+		</div>
 		<header class="page-head">
 			<div class="rd-navbar-wrap">
 				<nav data-md-device-layout="rd-navbar-fixed"
@@ -46,8 +58,7 @@
 							<!--Navbar Brand-->
 							<div class="rd-navbar-brand">
 								<a href="/studentsmedia/index"><img
-									style='margin-top: -5px; margin-left: -15px;' width='138'
-									height='31'
+									style='margin-top: -5px; margin-left: -15px;' height='31'
 									src='/studentsmedia/resources/images/studentsmedia/logo.png'
 									alt='' /></a>
 							</div>
@@ -58,9 +69,8 @@
 									<!--Navbar Brand Mobile-->
 									<div class="rd-navbar-mobile-brand">
 										<a href="/studentsmedia/index"><img
-											style='margin-top: -5px; margin-left: -15px;' width='138'
-											height='31'
-											src='/studentsmedia/resources/images/intense/student-logo.png'
+											style='margin-top: -5px; margin-left: -15px;' height='31'
+											src='/studentsmedia/resources/images/studentsmedia/logo.png'
 											alt='' /></a>
 									</div>
 									<!-- RD Navbar Nav-->
@@ -133,10 +143,10 @@
 														<p>${beneficio.descripcion}</p>
 														<p>Vence: ${beneficio.fechafin}</p>
 														<c:if test="${beneficio.estado=='Vencido'}">
-														<span class="label-custom label-lg-custom label-danger">${beneficio.estado}</span>
+															<span class="label-custom label-lg-custom label-danger">${beneficio.estado}</span>
 														</c:if>
 														<c:if test="${beneficio.estado=='Vigente'}">
-														<span class="label-custom label-lg-custom label-primary">${beneficio.estado}</span>
+															<span class="label-custom label-lg-custom label-primary">${beneficio.estado}</span>
 														</c:if>
 													</figcaption>
 												</figure>
